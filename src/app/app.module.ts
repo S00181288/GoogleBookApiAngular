@@ -9,6 +9,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BookComponent } from './book/book.component';
 import { setTheme } from 'ngx-bootstrap/utils';
+import { AngularFirestoreModule} from '@angular/fire/firestore';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment';
 
 
 @NgModule({
@@ -24,7 +27,9 @@ import { setTheme } from 'ngx-bootstrap/utils';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

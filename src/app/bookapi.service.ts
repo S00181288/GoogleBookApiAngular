@@ -4,11 +4,16 @@ import { Book } from './book';
 import { Observable } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
+import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookapiService {
+
+
+
+  
 
 
   private _siteURL = 'https://www.googleapis.com/books/v1/volumes?q=';
