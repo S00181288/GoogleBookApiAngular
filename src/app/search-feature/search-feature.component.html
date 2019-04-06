@@ -1,13 +1,13 @@
 <div id="center" > <h1   >Search for a book!</h1> </div>
 
-<form class ="ui form">
-  <div class="field">
-    <input type="text" name="book-name" placeholder="Enter Book Name" #bookName />
+<form class="active-cyan-4">
+  <div >
+    <input class="form-control"  type="text" name="book-name" placeholder="Enter Book Name" #bookName />
   </div>
-  <button class="ui button primary" (click)="getBooksInformation(bookName.value)" type="submit" >Submit</button>
-  <button class="ui button primary" (click)="GetBooksFromFar(bookName.value)" type="submit" >GetBooksFromFar</button>
-  <button class="ui button primary" (click)="SaveAll()" type="submit" >Save All Books</button>
-  
+  <button class=" btn-lg black" (click)="getBooksInformation(bookName.value)" type="submit" >Submit</button>
+  <button class=" btn-lg black" (click)="GetBooksFromFar(bookName.value)" type="submit" >GetBooksFromFar</button>
+  <button class=" btn-lg black" (click)="SaveAll()" type="submit" >Save All Books</button>
+ 
 
 </form>
 <div *ngIf="bookData">

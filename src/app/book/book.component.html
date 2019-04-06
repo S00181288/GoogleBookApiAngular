@@ -1,7 +1,7 @@
 
-<div id="Raised" *ngIf="bookData" class="ui raised segment">
+<div  *ngIf="bookData" class="form-horizontal Raised">
   
-  <h1>Your book search results</h1>
+  <h1 id="H1" >Your book search results</h1>
 
   <img id="MainImg" *ngIf="bookData" src = {{bookData.items[0].volumeInfo.imageLinks.thumbnail}}  >
   <h1 id="H1" *ngIf="bookData"> Book Title: {{bookData.items[0].volumeInfo.title}}</h1>
@@ -9,7 +9,36 @@
   <h1 id="H1" *ngIf="bookData"> Subtitle: {{bookData.items[0].volumeInfo.subtitle}}</h1>
   <h1 id="H1" *ngIf="bookData"> Publisher: {{bookData.items[0].volumeInfo.publisher}}</h1>
   <h1 id="H1" *ngIf="bookData"> Description: {{bookData.items[0].volumeInfo.description}}</h1> 
-  <button class="ui button primary" (click)="addBook(bookData.items[0])">Save</button>
+  <button class="btn-lg black" (click)="addBook(bookData.items[0])">Save</button>
 
   
   </div>
+
+  <div  *ngIf="bookData" class="ui raised segment">
+  
+      
+    
+      <img id="MainImg" *ngIf="bookData" src = {{bookData.items[1].volumeInfo.imageLinks.thumbnail}}  >
+      <h1 id="H1" *ngIf="bookData"> Book Title: {{bookData.items[1].volumeInfo.title}}</h1>
+      <h1 id="H1" *ngIf="bookData"> Author: {{bookData.items[1].volumeInfo.authors}}</h1>
+      <h1 id="H1" *ngIf="bookData"> Subtitle: {{bookData.items[1].volumeInfo.subtitle}}</h1>
+      <h1 id="H1" *ngIf="bookData"> Publisher: {{bookData.items[1].volumeInfo.publisher}}</h1>
+      <h1 id="H1" *ngIf="bookData"> Description: {{bookData.items[1].volumeInfo.description}}</h1> 
+      <button class="btn-lg black" (click)="addBook(bookData.items[1])">Save</button>
+    
+      
+      </div>
+
+      <div  *ngIf="bookData" class="form-horizontal Raised">
+  
+        
+          <img id="MainImg" *ngIf="bookData" src = {{bookData.items[2].volumeInfo.imageLinks.thumbnail}}  >
+          <h1 id="H1" *ngIf="bookData"> Book Title: {{bookData.items[2].volumeInfo.title}}</h1>
+          <h1 id="H1" *ngIf="bookData"> Author: {{bookData.items[2].volumeInfo.authors}}</h1>
+          <h1 id="H1" *ngIf="bookData"> Subtitle: {{bookData.items[2].volumeInfo.subtitle}}</h1>
+          <h1 id="H1" *ngIf="bookData"> Publisher: {{bookData.items[2].volumeInfo.publisher}}</h1>
+          <h1 id="H1" *ngIf="bookData"> Description: {{bookData.items[2].volumeInfo.description}}</h1> 
+          <button class="btn-lg black" (click)="addBook(bookData.items[2])">Save</button>
+        
+          
+          </div>

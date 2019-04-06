@@ -18,8 +18,36 @@
     background-color: black;
 }
 
-#Raised{
-    border: 1px;
+.Raised{
+    border: 3px;
     border-color: black;
     
+    
 }
+
+.black{
+    background-color: black;
+    color: white;
+
+}
+
+.NavText{
+    width: 20px;
+    height: 20px;
+}
+
+#H1{
+    text-align: center;
+    align-content: center;
+    
+}
+#MainImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+}
+       
+        
+    

@@ -8,6 +8,7 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BookComponent } from './book/book.component';
+import { setTheme } from 'ngx-bootstrap/utils';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { BookComponent } from './book/book.component';
     MenuBarComponent,
     routingcomponents,
     PagenotfoundComponent,
-    BookComponent
+    BookComponent,
+    
   ],
   imports: [
     BrowserModule,
