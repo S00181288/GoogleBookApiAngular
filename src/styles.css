@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+#Header{ 
+
+    color: red;
+    align-content: center;
+    text-align: center;
+
+}
+
+#center{
+    line-height: 100px;
+    text-align: center;
+}
+
+#nav{
+    fill: black;
+    color: white;
+    background-color: black;
+}
+
+#Raised{
+    border: 1px;
+    border-color: black;
+    
+}
