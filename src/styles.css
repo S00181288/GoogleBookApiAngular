@@ -39,7 +39,7 @@
 #H1{
     text-align: center;
     align-content: center;
-    
+    display: block;
 }
 #MainImg{
     display: block;
@@ -53,6 +53,14 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#border{
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+
+    
 }
         
     

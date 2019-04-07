@@ -11,6 +11,15 @@ import { from } from 'rxjs';
 export class BookComponent implements OnInit {
   @Input() bookData: string;
 
+//Adds Read book to firestore
+  addBook(bookData){
+    this._service.addbookData(bookData);
+   }
+
+   //Adds interested Book to firestore
+   addBookToRead(bookData){
+    this._service.addInterestedData(bookData);
+   }
 
   constructor(private _service: BookapiService) {
     

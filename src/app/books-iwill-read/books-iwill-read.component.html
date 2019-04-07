@@ -1,1 +1,19 @@
-<h1>I am learning how to do major bits.</h1>
+<h1 id="H1">Books you are interested in Reading</h1>
+
+<div class="form-horizontal Raised">
+<div *ngIf="Interested">
+       
+    <div *ngFor="let Interest of Interested; let i = index">
+        <div id="border">
+
+        <img id="MainImg" src = {{Interest.volumeInfo.imageLinks.thumbnail}}>
+        <h1 id="H1"> Book Title: {{Interest.volumeInfo.title}}</h1>
+        <h1 id="H1"> Author: {{Interest.volumeInfo.authors}}</h1>
+        <h1 id="H1"> Subtitle: {{Interest.volumeInfo.subtitle}}</h1>
+        <h1 id="H1"> Publisher: {{Interest.volumeInfo.publisher}}</h1> 
+    </div>
+            
+        </div>
+    </div>
+
+

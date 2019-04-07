@@ -28,7 +28,7 @@ export interface IVolumeInfo{
      publlisher: string;
      thumbnail?: string;
      
-    constructor(title:string,authors:string,subtitle:string,publisher:string,thumbnail: string){
+    constructor(title:string,authors:string,subtitle:string,publisher:string,thumbnail?: string){
         this.title = title;
         this.authors = authors;
         this.subtitle = subtitle;
