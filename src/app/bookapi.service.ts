@@ -37,7 +37,7 @@ export class BookapiService {
   
 
 
-
+//Collections are listed in here for firebase
   constructor( private _http: HttpClient, private _afs: AngularFirestore ) { 
     this.bookDataCollection = this._afs.collection<Book>("Read_Books")
     this.InterestedDataCollection = this._afs.collection<Book>("Interested_Books")
